@@ -26,18 +26,15 @@ const handlePrueba = (ev) => {
 
     if (numuser === randomNumber) {
      pista.innerHTML = "¡Has ganado campeona!";
-    } else if (numuser < randomNumber) {
+    } else if (numuser > randomNumber) {
         pista.innerHTML = "Demasiado alto";
-    } else if(numuser > randomNumber){
+    } else if(numuser < randomNumber){
         pista.innerHTML = "Demasiado bajo";
         
     } else if(numuser > max) { 
         pista.innerHTML = " El número debe estar entre 100 y 1";
     }
 }
-
-
-
 
 
 
