@@ -12,10 +12,14 @@ console.log(getRandomNumber(max));
 
 const button = document.querySelector(".js-button");
 let contador = 0;
+const NumeroUser = document.querySelector(".js-num");
 const intentos = document.querySelector(".js-intentos");
 const handlePrueba = (ev) => {
     ev.preventDefault();
     contador++;
     intentos.innerHTML = `Número de intentos : ${contador}`;
+    const numuser = NumeroUser.value;
+    console.log(numuser);
 }
-button.addEventListener("click", handlePrueba)
+button.addEventListener("click", handlePrueba);
+
