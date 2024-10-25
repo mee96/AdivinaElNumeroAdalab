@@ -30,12 +30,11 @@ const handlePrueba = (ev) => {
         pista.innerHTML = "Demasiado alto";
     } else if(numuser < randomNumber){
         pista.innerHTML = "Demasiado bajo";
-        
-    } else if(numuser > max) { 
-        pista.innerHTML = " El número debe estar entre 100 y 1";
-    }
-}
+    } 
 
+    if (numuser > 100) { 
+        pista.innerHTML = " El número debe estar entre 1 y 100"; }
+}
 
 
 
